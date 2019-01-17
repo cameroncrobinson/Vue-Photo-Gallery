@@ -2,14 +2,14 @@ const app = new Vue ({
   el: '#app',
   data: {
     image: '',
-    caption: '',
+    caption: 'caption',
     altText:'',
-  }
+  },
   methods: {
     uploadPhoto() {
-      if (this.image ='' || this.altText = ''){
+      if (this.image =='' || this.altText == ''){
         alert("required fields left blank!");
       }
     }
   }
-})
+});
