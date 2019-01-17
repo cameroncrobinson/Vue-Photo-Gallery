@@ -18,6 +18,4 @@ do {
       document.getElementById("desc").innerHTML = photoData.caption;
       n++;
     }
-    while (n<photoData.image.length) {
-
-    }
+    while (n<photoData.image.length);
