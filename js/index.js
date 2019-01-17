@@ -13,11 +13,14 @@ const photoData = {
 let n = 0;
 
 do {
+  if (photoData != null && photoData.altText != null)
       document.getElementById("image").src = photoData.image;
       document.getElementById('image').alt = photoData.altText;
       document.getElementById("desc").innerHTML = photoData.caption;
       n++;
-    }
-    while (n<photoData.image.length) {
+      
+      if (photoData.caption != null)
+        document.getElementById("desc").style.display = "none";
 
     }
+    while (n<photoData.image.length);

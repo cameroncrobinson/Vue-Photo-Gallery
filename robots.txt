@@ -1,0 +1,4 @@
+# Rule 2
+User-agent: *
+disallow: /
+.jshintrc
