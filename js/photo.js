@@ -7,9 +7,9 @@ const app = new Vue ({
   },
   methods: {
     uploadPhoto() {
-      if (this.image =='' || this.altText == ''){
-        alert("required fields left blank!");
-      }
+        console.log('image', this.image);
+        console.log('caption',this.altText);
+        console.log('altText', this.altText);
     }
   }
 });

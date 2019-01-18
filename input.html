@@ -10,17 +10,23 @@
     </style>
   </head>
   <body>
+    <div id="app">
+
+
     <form class="" action="index.html" method="post">
-      <input type="file" name="image" accept="image/*">
-      <input type="text" name="caption" value="">
-      <input type="text" name="alt text" value="">
-      <input v-on:click"uploadPhoto" type="submit" name="" value="">
+      <input v-model='image' type="text" name="image">
+      <input v-model="altText"  type="text" name="Alt Text" value="">
+      <input v-model="caption" type="text" name="Caption" value="">
     </form>
+    <button @click="uploadPhoto" type="button" name="button">
+      Upload
+    </button>
+    </div>
 
-
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script type="text/javascript" src="js/photo.js"></script>
     <!-- development version, includes helpful console warnings -->
     <!-- remember to swap out out development version for production -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
   </body>
 </html>
