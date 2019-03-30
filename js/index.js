@@ -26,5 +26,16 @@ const photoData = {
 //     while (n<photoData.image.length);
 
 if (photoData.clientHeight > photoData.clientWidth){
-  document.getElementsByClassName('gallery-image');
+  document.getElementsByClassName('gallery-image').style =`
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;`
+}
+else {
+  ocument.getElementsByClassName('gallery-image').style =`
+   grid-column-start: 5;
+   grid-column-end: 9;
+   grid-row-start: 1;
+   grid-row-end: 6;`
 }
